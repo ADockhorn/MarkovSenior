@@ -47,8 +47,8 @@ Results will be stored in the projects output folder. Going back to the main pag
 
 # Authors
 
-- [Kayra Oguz](https://www.linkedin.com/in/m-kayra-o%C4%9Fuz-a04488203/)** 
-- [Alexander Dockhorn](http://www.tnt.uni-hannover.de/de/staff/dockhorn/)** 
+- [Kayra Oguz](https://www.linkedin.com/in/m-kayra-o%C4%9Fuz-a04488203/) 
+- [Alexander Dockhorn](http://www.tnt.uni-hannover.de/de/staff/dockhorn/) 
 
 The work itself derives from the bachelor's thesis by Mehmet Kayra Oguz, which was supervised by Alexander Dockhorn. The initial version of this repository is result of the related thesis.
 
