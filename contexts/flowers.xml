@@ -1,0 +1,27 @@
+<context seed="3169" shuffle_matches="1">
+    <environment path="environment.txt" />
+    <alphabet></alphabet>
+    <grammar>
+        <all>
+            <rule in="N/*/*/*" out="G/*/*/*" />
+        </all>
+        <all>
+            <rule in="G/*/*/*/*" out="U/*/*/*/*" />
+        </all>
+        <markov>
+            <one random="1">
+                <rule in="UUU/UUU/UPU" out="***/*P*/*E*" />
+                <rule in="UUU/UUU/UUU/PUU/**U" out="***/*P*/*E*/EE*/***" />
+                <rule in="UUU/UUU/UUU/UUP/U**" out="***/*P*/*E*/*EE/***" />
+                <rule in="UUUUU/UUUUU/UUUUU/UUPUU/U***U" out="*****/*P*P*/*E*E*/*EEE*/*****" />
+                <rule in="UUU/UPU/UEU/UEU" out="*Y*/YEY/*Y*/***" />
+            </one>
+            <one>
+                <rule in="UUUUU/UUUUU/UUUUU/GGGGG/NNNNN" out="*****/**P**/**E**/**E**/**E**" />
+            </one>
+        </markov>
+        <all>
+            <rule in="***/*P*/***" out="*Y*/YEY/*Y*" />
+        </all>
+    </grammar>
+</context>

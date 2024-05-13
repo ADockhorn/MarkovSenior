@@ -1,0 +1,70 @@
+<context seed="-12387" shuffle_matches="1">
+    <environment path="environment.txt" />
+    <alphabet></alphabet>
+    <grammar>
+        <sequence loop="2">
+            <one>
+                <rule in="B" out="W" />
+            </one>
+            <one>
+                <rule in="B" out="R" />
+            </one>
+        </sequence>
+        <markov>
+            <sequence>
+                <one>
+                    <rule in="WB" out="WW" rot="0" />
+                    <rule in="WB" out="WW" rot="1" />
+                    <rule in="WB" out="WW" rot="2" />
+                    <rule in="WB" out="WW" rot="3" />
+                </one>
+                <one>
+                    <rule in="RB" out="RR" rot="0" />
+                    <rule in="RB" out="RR" rot="1" />
+                    <rule in="RB" out="RR" rot="2" />
+                    <rule in="RB" out="RR" rot="3" />
+                </one>
+            </sequence>
+        </markov>
+        <all random="0">
+            <rule in="RW" out="UU" rot="0" />
+            <rule in="RW" out="UU" rot="1" />
+            <rule in="RW" out="UU" rot="2" />
+            <rule in="RW" out="UU" rot="3" />
+            <rule in="W" out="B" />
+            <rule in="R" out="B" />
+            <rule in="BU/UB" out="U*/**" rot="0" />
+            <rule in="BU/UB" out="U*/**" rot="1" />
+            <rule in="BU/UB" out="U*/**" rot="2" />
+            <rule in="BU/UB" out="U*/**" rot="3" />
+            <rule in="UB" out="*G" rot="0" />
+            <rule in="UB" out="*G" rot="1" />
+            <rule in="UB" out="*G" rot="2" />
+            <rule in="UB" out="*G" rot="3" />
+        </all>
+        <sequence loop="15">
+            <one>
+                <rule in="B" out="E" />
+            </one>
+        </sequence>
+        <markov>
+            <sequence>
+                <one>
+                    <rule in="EB" out="*E" rot="0" />
+                    <rule in="EB" out="*E" rot="1" />
+                    <rule in="EB" out="*E" rot="2" />
+                    <rule in="EB" out="*E" rot="3" />
+                </one>
+                <one>
+                    <rule in="GB" out="*G" rot="0" />
+                    <rule in="GB" out="*G" rot="1" />
+                    <rule in="GB" out="*G" rot="2" />
+                    <rule in="GB" out="*G" rot="3" />
+                </one>
+            </sequence>
+        </markov>
+        <all>
+            <rule in="B" out="G" />
+        </all>
+    </grammar>
+</context>
